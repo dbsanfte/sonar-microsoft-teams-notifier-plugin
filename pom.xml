@@ -1,17 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.koant.sonar.slack</groupId>
-  <artifactId>cks-slack-notifier</artifactId>
-  <version>2.2-SNAPSHOT</version>
+  <groupId>com.cardano.sonar.microsoftteams</groupId>
+  <artifactId>microsoft-teams-notifier</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>sonar-plugin</packaging>
 
-  <name>CKS Slack Notifier Plugin</name>
-  <description>Sends notifications to Slack.</description>
+  <name>SonarQube Microsoft Teams Notifier Plugin</name>
+  <description>Sends notifications to Microsoft Teams.</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <sonar.pluginName>Slack Notifier</sonar.pluginName>
+    <sonar.pluginName>Microsoft Teams Notifier</sonar.pluginName>
     <project.targetJdk>1.8</project.targetJdk>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -22,9 +22,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:git@github.com:kogitant/sonar-slack-notifier-plugin.git</connection>
-    <url>scm:git:git@github.com:kogitant/sonar-slack-notifier-plugin.git</url>
-    <developerConnection>scm:git:git@github.com:kogitant/sonar-slack-notifier-plugin.git</developerConnection>
+    <connection>scm:git:git@github.com:kogitant/sonar-microsoft-teams-notifier-plugin.git</connection>
+    <url>scm:git:git@github.com:kogitant/sonar-microsoft-teams-notifier-plugin.git</url>
+    <developerConnection>scm:git:git@github.com:kogitant/sonar-microsoft-teams-notifier-plugin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   
@@ -43,13 +43,6 @@
       <artifactId>commons-logging</artifactId>
       <version>1.2</version>
       <scope>provided</scope>
-    </dependency>
-
-    <!-- Dependencies of this plugin, not provided by SonarQube -->
-    <dependency>
-      <groupId>com.github.seratch</groupId>
-      <artifactId>jslack</artifactId>
-      <version>1.0.3</version>
     </dependency>
 
     <!-- Testing dependencies -->
@@ -141,15 +134,15 @@
         <version>1.17</version>
         <extensions>true</extensions>
         <configuration>
-          <jarName>cks-slack-notifier-${project.version}</jarName>
-          <pluginKey>cks-slack-notifier</pluginKey>
-          <pluginClass>com.koant.sonar.slacknotifier.SlackNotifierPlugin</pluginClass>
-          <pluginName>CKS Slack Notifier</pluginName>
-          <pluginDescription>Sends notifications to Slack</pluginDescription>
+          <jarName>sonarqube-microsoft-teams-notifier-${project.version}</jarName>
+          <pluginKey>sonarqube-microsoft-teams-notifier</pluginKey>
+          <pluginClass>com.cardano.sonar.microsoftteamsnotifier.MicrosoftTeamsNotifierPlugin</pluginClass>
+          <pluginName>Sonarqube Microsoft Teams Notifier</pluginName>
+          <pluginDescription>Sends notifications to Microsoft Teams</pluginDescription>
           <sonarQubeMinVersion>6.1</sonarQubeMinVersion>
-          <pluginUrl>https://github.com/kogitant/sonar-slack-notifier-plugin</pluginUrl>
-          <pluginIssueTrackerUrl>https://github.com/kogitant/sonar-slack-notifier-plugin/issues</pluginIssueTrackerUrl>
-          <pluginSourcesUrl>https://github.com/kogitant/sonar-slack-notifier-plugin</pluginSourcesUrl>
+          <pluginUrl>https://github.com/kogitant/sonar-microsoft-teams-notifier-plugin</pluginUrl>
+          <pluginIssueTrackerUrl>https://github.com/kogitant/sonar-microsoft-teams-notifier-plugin/issues</pluginIssueTrackerUrl>
+          <pluginSourcesUrl>https://github.com/kogitant/sonar-microsoft-teams-notifier-plugin</pluginSourcesUrl>
           <pluginOrganizationName>Antti Koivisto</pluginOrganizationName>
           <pluginOrganizationUrl>https://github.com/kogitant</pluginOrganizationUrl>
         </configuration>

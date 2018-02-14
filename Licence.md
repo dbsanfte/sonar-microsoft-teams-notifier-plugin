@@ -3,7 +3,8 @@ All other copyright for project https://github.com/kogitant/sonar-slack-notifier
 
 MIT License
 
-Copyright (c) 2016 kogitant, astrebel
+Copyright (c) 2018 Cardano Risk Management Ltd
+Portions Copyright (c) 2016 kogitant, astrebel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
